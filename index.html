@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prekliata Stránka - podľa Skutočnosti</title>
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICA8cGF0aCBmaWxsPSIjZmYwMDAwIiBkPSJNMjAgOTAgUSA1MCAwLCA4MCA5MCBMIDUwIDUwIFoiIC8+Cjwvc3ZnPg==" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0d0c0c;
+            color: #d6d6d6;
+            font-family: 'Inter', sans-serif;
+            cursor: url('data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAgAAAAIAAAAAEAIAAAAAAAABAAABAAAAAAAIICAEBAAAAAAAAAAAAAAACAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAACAAAAAAAAAgAAAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAACAACAAAAAwAAAAMAAAAAMAAAADAAAAAgAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAwAAAAMAAAACAAAAAAAAAgAAAAIAAAAAAAAAAwAAAAAAAAAAAAAAAAAAACAAAAACAAAAAAAAAgAAAAIAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAACAAAAAgAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAAAAAAAAAAAAACAAAAAwAAAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAAwAAAAIAAAAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAACAAAAAwAAAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAAwAAAAIAAAAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAADAAAAAAAAAwAAAAIAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAMAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAACAAAAAwAAAAAAAAADAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgAAAAACAgICAgICAgICAgICAgICAgICAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=='), auto;
+        }
+        .creepster-font {
+            font-family: 'Creepster', cursive;
+        }
+        .story-text {
+            cursor: pointer;
+            transition: color 0.2s ease-in-out;
+        }
+        .story-text:hover {
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body class="p-8 md:p-12 lg:p-24">
+
+    <div class="max-w-4xl mx-auto text-center">
+        <h1 class="creepster-font text-5xl md:text-7xl text-red-700 mb-8 animate-pulse">Prekliata Stránka</h1>
+        <p class="text-red-700 mb-12">
+            Informácie na tejto stránke nie sú pre slabé povahy. Vstúpte na vlastné riziko.
+        </p>
+    </div>
+
+    <div class="max-w-4xl mx-auto space-y-16 md:space-y-24">
+
+        <!-- Jeden rozsiahly príbeh -->
+        <div class="bg-gray-900 bg-opacity-70 p-6 rounded-xl shadow-lg border-2 border-red-900">
+            <h2 class="creepster-font text-3xl text-red-600 mb-4">Skutočný príbeh o Satanovi</h2>
+            <p id="full-story-text" class="mb-4 story-text">
+                Táto séria udalostí sa skutočne stala a hovorí sa o nej v tieni dedín po celom Slovensku. Nikto nevie, odkiaľ prišiel, len že sa objavil, keď mesiac svietil najjasnejšie, a smial sa. Ten smiech... nikto naň nezabudne. Bol hlboký letný spln, keď sa pri obci pri Trnave ozýval ten smiech. Bol to smiech, aký by nemohol vydať žiaden človek. Miestni si mysleli, že je to len vietor alebo opití chlapci z vedľajšej dediny, ale smiech silnel a blíži sa. O polnoci prestalo počuť dieťa z jednej chalupy plakať. Otec sa zľakol a bežal za ním, ale v detskej izbe našiel len otvorené okno a na dvore odtlačky kopyta v blate. Smiech sa už neozýval, ale v diaľke v lese ho počuli celú noc.
+
+                Tento jav sa neobmedzil len na jednu lokalitu. Cestuje. Starší ľudia, ktorí vedeli o čom hovorili, vraveli, že sa Satan pohybuje blízko obcí aj cez deň, ale maskuje sa. Ľudia ho spoznajú len podľa prázdnych, čiernych očí. Nikto, kto sa s ním stretol, sa už nevrátil. A v každom lese, kde sa objaví, sa celú noc ozýva jeho desivý, chichotavý smiech, ktorý ľudí privádza na pokraj šialenstva. Všetci, ktorí ho počuli, sa buď zbláznili alebo zmizli.
+
+                Nedávno sa tento fenomén objavil v Bratislave. V noci z 1. na 2. júla 2025 zmizli traja mladí ľudia, ktorí šli večer na párty. Naposledy ich videli na Kamzíkovej ulici. Podľa svedkov sa jeden z nich zrazu začal smiať tak, ako nikto nepočul. Následne sa po ňom smiali aj ostatní, a to aj napriek strachu, ktorý mali v tvárach. Zmizli aj so smiechom. Tí, čo to videli, už sa nevráti. Príbeh pokračuje a šíri sa po celom Slovensku.
+            </p>
+        </div>
+        
+        <!-- Sekcia na stav a upozornenie -->
+        <div class="text-center">
+            <div id="statusMessage" class="text-red-500 mt-4 h-6">Klikni na text príbehu, aby si si ho vypočul.</div>
+        </div>
+
+        <!-- Video -->
+        <div class="w-full h-auto flex justify-center items-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6f_qJq4oVeE?si=b6bfohIsxRTNKrir" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="w-full max-w-xl md:max-w-2xl h-64 md:h-96 rounded-xl border-2 border-red-900"></iframe>
+        </div>
+        
+        <!-- Sekcia o hre -->
+        <div class="bg-gray-900 bg-opacity-70 p-6 rounded-xl shadow-lg border-2 border-red-900">
+            <h2 class="creepster-font text-2xl text-red-600 mb-4">OZ Spoločenstvo a GAMEPLA631</h2>
+            <p id="game-text" class="mb-4 story-text">
+                Prípadom sa zaoberá Oz Spoločenstvo už dodnes. Herná spoločnosť GAMEPLA631 pracuje na vytvorení hry na Roblox inšpirovanej
+                týmito udalosťami. Hra, s názvom "Návrat kopyta", má za cieľ priblížiť realitu tohto fenoménu. Očakávaný dátum vydania: 20.8.2027.
+            </p>
+        </div>
+
+    </div>
+    
+    <script>
+        const statusMessage = document.getElementById('statusMessage');
+        const storyTextElement = document.getElementById('full-story-text');
+        const gameTextElement = document.getElementById('game-text');
+        let isPlaying = false;
+        
+        // Funkcia, ktorá vypíše dostupné hlasy do konzoly
+        function loadVoicesAndLog() {
+            const voices = window.speechSynthesis.getVoices();
+            if (voices.length === 0) {
+                // Ak sa hlasy nenačítajú ihneď, počkáme na udalosť 'voiceschanged'
+                window.speechSynthesis.onvoiceschanged = () => {
+                    const loadedVoices = window.speechSynthesis.getVoices();
+                    console.log('Dostupné hlasy pre tento prehliadač:');
+                    loadedVoices.forEach(voice => {
+                        console.log(`- Názov: ${voice.name}, Jazyk: ${voice.lang}`);
+                    });
+                };
+            } else {
+                console.log('Dostupné hlasy pre tento prehliadač:');
+                voices.forEach(voice => {
+                    console.log(`- Názov: ${voice.name}, Jazyk: ${voice.lang}`);
+                });
+            }
+        }
+
+        // Zavolajte funkciu po načítaní stránky
+        window.onload = loadVoicesAndLog;
+
+        const readText = (element) => {
+            if ('speechSynthesis' in window) {
+                // Ak sa už niečo hovorí, zastav to
+                if (speechSynthesis.speaking) {
+                    speechSynthesis.cancel();
+                    isPlaying = false;
+                }
+
+                if (!isPlaying) {
+                    statusMessage.textContent = 'Prehrávam text...';
+                    const textToSpeak = element.textContent;
+                    const utterance = new SpeechSynthesisUtterance(textToSpeak);
+                    
+                    // Nastav jazyk na slovenčinu
+                    utterance.lang = 'sk-SK';
+                    
+                    // Nastav hlas. Skús použiť 'Google Slovak' alebo iný podobný, ak je k dispozícii.
+                    const skVoice = window.speechSynthesis.getVoices().find(voice => voice.lang === 'sk-SK' || voice.lang.startsWith('sk-'));
+                    if (skVoice) {
+                        utterance.voice = skVoice;
+                    }
+
+                    // Vypni prehrávanie po skončení
+                    utterance.onend = () => {
+                        isPlaying = false;
+                        statusMessage.textContent = 'Text bol prečítaný.';
+                    };
+                    
+                    speechSynthesis.speak(utterance);
+                    isPlaying = true;
+                }
+            } else {
+                statusMessage.textContent = 'Prepáčte, váš prehliadač nepodporuje syntézu reči.';
+            }
+        };
+
+        storyTextElement.addEventListener('click', () => readText(storyTextElement));
+        gameTextElement.addEventListener('click', () => readText(gameTextElement));
+
+    </script>
+</body>
+</html>
